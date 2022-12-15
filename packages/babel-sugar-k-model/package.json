@@ -1,0 +1,44 @@
+{
+  "name": "@kdujs/babel-sugar-k-model",
+  "version": "1.0.0",
+  "description": "Babel syntactic sugar for k-model support in Kdu JSX",
+  "main": "dist/plugin.js",
+  "repository": "https://github.com/kdujs/jsx/tree/main/packages/babel-sugar-k-model",
+  "author": "NKDuy",
+  "license": "MIT",
+  "private": false,
+  "files": [],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublish": "yarn build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "ava": "^0.25.0",
+    "jsdom": "^13.0.0",
+    "jsdom-global": "^3.0.2",
+    "kdu": "^2.5.24",
+    "kdu-template-compiler": "^2.5.24",
+    "nyc": "^13.1.0",
+    "rollup": "^0.67.4",
+    "rollup-plugin-babel": "4.0.3",
+    "rollup-plugin-istanbul": "^2.0.1",
+    "rollup-plugin-uglify-es": "^0.0.1"
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-jsx": "^7.2.0",
+    "@kdujs/babel-helper-kdu-jsx-merge-props": "^1.0.0",
+    "@kdujs/babel-plugin-transform-kdu-jsx": "^1.0.0",
+    "camelcase": "^5.0.0",
+    "html-tags": "^2.0.0",
+    "svg-tags": "^1.0.0"
+  },
+  "nyc": {
+    "exclude": [
+      "dist",
+      "test"
+    ]
+  }
+}

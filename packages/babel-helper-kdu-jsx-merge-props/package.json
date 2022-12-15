@@ -1,0 +1,31 @@
+{
+  "name": "@kdujs/babel-helper-kdu-jsx-merge-props",
+  "version": "1.0.0",
+  "description": "Babel helper for Kdu JSX spread",
+  "main": "dist/helper.js",
+  "repository": "https://github.com/kdujs/jsx/tree/main/packages/babel-helper-kdu-jsx-merge-props",
+  "author": "NKDuy",
+  "license": "MIT",
+  "private": false,
+  "files": [],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublish": "yarn build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "ava": "^0.25.0",
+    "nyc": "^13.1.0",
+    "rollup": "^0.67.4",
+    "rollup-plugin-babel": "4.0.3",
+    "rollup-plugin-babel-minify": "^6.2.0",
+    "rollup-plugin-istanbul": "^2.0.1"
+  },
+  "nyc": {
+    "exclude": [
+      "dist",
+      "test"
+    ]
+  }
+}

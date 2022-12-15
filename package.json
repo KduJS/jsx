@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "release:build": "lerna run build",
+    "prerelease": "yarn release:build",
+    "release": "lerna publish"
+  },
+  "devDependencies": {
+    "execa": "^1.0.0",
+    "lerna": "^3.5.1"
+  }
+}

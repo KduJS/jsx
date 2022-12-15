@@ -1,6 +1,6 @@
 {
   "name": "@kdujs/babel-helper-kdu-jsx-merge-props",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Babel helper for Kdu JSX spread",
   "main": "dist/helper.js",
   "repository": "https://github.com/kdujs/jsx/tree/main/packages/babel-helper-kdu-jsx-merge-props",

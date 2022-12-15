@@ -1,6 +1,6 @@
 {
   "name": "@kdujs/babel-sugar-functional-kdu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Babel syntactic sugar for functional components",
   "main": "dist/plugin.js",
   "repository": "https://github.com/kdujs/jsx/tree/main/packages/babel-sugar-functional-kdu",

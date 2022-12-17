@@ -52,7 +52,7 @@ import MyComponent from './my-component'
 export default {
   render() {
     return <MyComponent>hello</MyComponent>
-  }
+  },
 }
 ```
 
@@ -119,25 +119,25 @@ render() {
 ### Directives
 
 ```jsx
-<input kModel="newTodoText" />
+<input kModel={this.newTodoText} />
 ```
 
 with a modifier:
 
 ```jsx
-<input kModel_trim="newTodoText" />
+<input kModel_trim={this.newTodoText} />
 ```
 
 with an argument:
 
 ```jsx
-<input kOn:click="newTodoText" />
+<input kOn:click={this.newTodoText} />
 ```
 
 with an argument and modifiers:
 
 ```jsx
-<input kOn:click_stop_prevent="newTodoText" />
+<input kOn:click_stop_prevent={this.newTodoText} />
 ```
 
 k-html:
@@ -151,11 +151,11 @@ k-html:
 Transpiles arrow functions that return JSX into functional components, when they are either default exports:
 
 ```jsx
-export default ({ props }) => <p>hello { props.message }</p>
+export default ({ props }) => <p>hello {props.message}</p>
 ```
 
 or PascalCase variable declarations:
 
 ```jsx
-const HelloWorld = ({ props }) => <p>hello { props.message }</p>
+const HelloWorld = ({ props }) => <p>hello {props.message}</p>
 ```

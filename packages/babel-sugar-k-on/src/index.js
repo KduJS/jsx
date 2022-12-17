@@ -183,15 +183,25 @@ export default function(babel) {
               .reduce((acc, item) => (acc ? or(acc, item) : item)),
           ),
         )
-      } else if (key === 'capture') {
-        event = '!' + event
-      } else if (key === 'once') {
-        event = '~' + event
+      } else if (key === 'capture' || key === 'once' || key === 'passive') {
+        continue
       } else if (key === 'native') {
         isNative = true
       } else {
         keys.push(key)
       }
+    }
+
+    // kdu has special order of capture/once/passive with
+    // modifier markers
+    if (modifiers.indexOf('capture') > -1) {
+      event = '!' + event
+    }
+    if (modifiers.indexOf('once') > -1) {
+      event = '~' + event
+    }
+    if (modifiers.indexOf('passive') > -1) {
+      event = '&' + event
     }
 
     if (keys.length) {
@@ -251,7 +261,7 @@ export default function(babel) {
   }
 
   function addEvent(event, expression, isNative, attributes) {
-    if (event[0] !== '~' && event[0] !== '!') {
+    if (event[0] !== '~' && event[0] !== '!' && event[0] !== '&') {
       attributes.push(
         t.jSXAttribute(
           t.jSXIdentifier(`${isNative ? 'nativeOn' : 'on'}-${event}`),

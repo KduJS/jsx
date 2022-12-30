@@ -13,31 +13,33 @@ yarn add @kdujs/babel-preset-jsx @kdujs/babel-helper-kdu-jsx-merge-props
 npm install @kdujs/babel-preset-jsx @kdujs/babel-helper-kdu-jsx-merge-props --save
 ```
 
-In your `.babelrc`:
+In your `babel.config.js`:
 
-```json
-{
-  "presets": ["@kdujs/babel-preset-jsx"]
+```js
+module.exports = {
+  presets: ['@kdujs/babel-preset-jsx'],
 }
 ```
 
-You can toggle specific features, by default all features are enabled, e.g.:
+You can toggle specific features, by default all features (except `compositionAPI`) are enabled, e.g.:
 
-```json
-{
-  "presets": [
+```js
+module.exports = {
+  presets: [
     [
-      "@kdujs/babel-preset-jsx",
+      '@kdujs/babel-preset-jsx',
       {
-        "kModel": false
-      }
-    ]
-  ]
+        kModel: false,
+        compositionAPI: true,
+      },
+    ],
+  ],
 }
 ```
 
 Options are:
 
+- `compositionAPI` - Enables [@kdujs/babel-sugar-composition-api-inject-h](../babel-sugar-composition-api-inject-h) and [@kdujs/babel-sugar-composition-api-render-instance](../babel-sugar-composition-api-render-instance), support returning render function in `setup`.
 - `functional` [@kdujs/babel-sugar-functional-kdu](../babel-sugar-functional-kdu/README.md) - Functional components syntactic sugar
 - `injectH` [@kdujs/babel-sugar-inject-h](../babel-sugar-inject-h/README.md) - Automatic `h` injection syntactic sugar
 - `kModel` [@kdujs/babel-sugar-k-model](../babel-sugar-k-model/README.md) - `kModel` syntactic sugar

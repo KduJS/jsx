@@ -54,8 +54,8 @@ export default babel => {
   return {
     inherits: syntaxJsx,
     visitor: {
-      Program(path) {
-        path.traverse({
+      Program(path1) {
+        path1.traverse({
           'ObjectMethod|ClassMethod'(path) {
             if (firstParamIsH(t, path) || !hasJSX(t, path) || isInsideJSXExpression(t, path)) {
               return
@@ -76,9 +76,9 @@ export default babel => {
                   ),
                 ]),
               )
-          },
+          }
         })
-      },
+      }
     },
   }
 }

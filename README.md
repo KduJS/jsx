@@ -10,11 +10,11 @@ Install the preset with:
 npm install @kdujs/babel-preset-jsx @kdujs/babel-helper-kdu-jsx-merge-props
 ```
 
-Then add the preset to `.babelrc`:
+Then add the preset to `babel.config.js`:
 
-```json
-{
-  "presets": ["@kdujs/babel-preset-jsx"]
+```js
+module.exports = {
+  presets: ['@kdujs/babel-preset-jsx'],
 }
 ```
 

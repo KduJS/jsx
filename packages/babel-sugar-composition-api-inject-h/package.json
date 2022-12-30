@@ -1,9 +1,9 @@
 {
-  "name": "@kdujs/babel-sugar-inject-h",
-  "version": "1.2.2",
-  "description": "Babel syntactic sugar for h automatic injection for Kdu JSX",
+  "name": "@kdujs/babel-sugar-composition-api-inject-h",
+  "version": "1.2.1",
+  "description": "Babel syntactic sugar for h automatic injection for Kdu JSX with @kdujs/composition-api",
   "main": "dist/plugin.js",
-  "repository": "https://github.com/kdujs/jsx/tree/main/packages/babel-sugar-inject-h",
+  "repository": "https://github.com/kdujs/jsx/tree/main/packages/babel-sugar-composition-api-inject-h",
   "author": "NKDuy",
   "license": "MIT",
   "private": false,

@@ -1,6 +1,6 @@
 {
   "name": "@kdujs/babel-sugar-k-on",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Babel syntactic sugar for k-model support in Kdu JSX",
   "main": "dist/plugin.js",
   "repository": "https://github.com/kdujs/jsx/tree/main/packages/babel-sugar-k-on",
@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@babel/plugin-syntax-jsx": "^7.2.0",
-    "@kdujs/babel-plugin-transform-kdu-jsx": "^1.2.1",
+    "@kdujs/babel-plugin-transform-kdu-jsx": "^1.2.4",
     "camelcase": "^5.0.0"
   },
   "peerDependencies": {

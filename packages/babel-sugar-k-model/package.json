@@ -1,6 +1,6 @@
 {
   "name": "@kdujs/babel-sugar-k-model",
-  "version": "1.4.0-0",
+  "version": "1.4.0",
   "description": "Babel syntactic sugar for k-model support in Kdu JSX",
   "main": "dist/plugin.js",
   "repository": "https://github.com/kdujs/jsx/tree/main/packages/babel-sugar-k-model",
@@ -34,8 +34,8 @@
   },
   "dependencies": {
     "@babel/plugin-syntax-jsx": "^7.2.0",
-    "@kdujs/babel-helper-kdu-jsx-merge-props": "^1.4.0-0",
-    "@kdujs/babel-plugin-transform-kdu-jsx": "^1.4.0-0",
+    "@kdujs/babel-helper-kdu-jsx-merge-props": "^1.4.0",
+    "@kdujs/babel-plugin-transform-kdu-jsx": "^1.4.0",
     "camelcase": "^5.0.0",
     "html-tags": "^2.0.0",
     "svg-tags": "^1.0.0"

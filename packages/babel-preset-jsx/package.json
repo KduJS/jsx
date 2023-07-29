@@ -1,6 +1,6 @@
 {
   "name": "@kdujs/babel-preset-jsx",
-  "version": "1.4.0-0",
+  "version": "1.4.0",
   "description": "Babel preset for Kdu JSX",
   "main": "dist/plugin.cjs.js",
   "repository": "https://github.com/kdujs/jsx/tree/main/packages/babel-preset-jsx",
@@ -16,14 +16,14 @@
     "prerelease": "yarn build"
   },
   "dependencies": {
-    "@kdujs/babel-helper-kdu-jsx-merge-props": "^1.4.0-0",
-    "@kdujs/babel-plugin-transform-kdu-jsx": "^1.4.0-0",
-    "@kdujs/babel-sugar-composition-api-inject-h": "^1.4.0-0",
-    "@kdujs/babel-sugar-composition-api-render-instance": "^1.4.0-0",
-    "@kdujs/babel-sugar-functional-kdu": "^1.4.0-0",
-    "@kdujs/babel-sugar-inject-h": "^1.4.0-0",
-    "@kdujs/babel-sugar-k-model": "^1.4.0-0",
-    "@kdujs/babel-sugar-k-on": "^1.4.0-0"
+    "@kdujs/babel-helper-kdu-jsx-merge-props": "^1.4.0",
+    "@kdujs/babel-plugin-transform-kdu-jsx": "^1.4.0",
+    "@kdujs/babel-sugar-composition-api-inject-h": "^1.4.0",
+    "@kdujs/babel-sugar-composition-api-render-instance": "^1.4.0",
+    "@kdujs/babel-sugar-functional-kdu": "^1.4.0",
+    "@kdujs/babel-sugar-inject-h": "^1.4.0",
+    "@kdujs/babel-sugar-k-model": "^1.4.0",
+    "@kdujs/babel-sugar-k-on": "^1.4.0"
   },
   "devDependencies": {
     "rollup": "^0.67.4",

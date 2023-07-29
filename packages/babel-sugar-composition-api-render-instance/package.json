@@ -1,6 +1,6 @@
 {
   "name": "@kdujs/babel-sugar-composition-api-render-instance",
-  "version": "1.2.4",
+  "version": "1.4.0-0",
   "description": "Babel syntactic sugar for replaceing `this` with `getCurrentInstance()` in Kdu JSX with @kdujs/composition-api",
   "main": "dist/plugin.js",
   "repository": "https://github.com/kdujs/jsx/tree/main/packages/babel-sugar-composition-api-render-instance",

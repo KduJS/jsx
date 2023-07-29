@@ -1,14 +1,17 @@
 {
   "private": true,
   "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "postinstall": "lerna bootstrap",
     "release:build": "lerna run build",
     "prerelease": "yarn release:build",
     "release": "lerna publish"
   },
   "devDependencies": {
-    "execa": "^1.0.0",
-    "lerna": "^3.5.1"
+    "@lerna-lite/cli": "^1.9.0",
+    "@lerna-lite/run": "^1.9.0",
+    "execa": "^1.0.0"
   }
 }
